@@ -9,7 +9,7 @@ provider:
 
 functions:
   generateRandomNumber:
-    handler: src/handler.generateRandomNumber
+    handler: src/handler.generateRandomNumber.generateRandomNumber
     events:
       - http:
           path: random-number
@@ -18,7 +18,7 @@ functions:
     timeout: 60 #seconds
     memorySize: 128 #megabytes
   home:
-    handler: src/handler.home
+    handler: src/handler.home.home
     events:
       - http:
           path: home
@@ -27,7 +27,7 @@ functions:
     timeout: 60 #seconds
     memorySize: 128 #megabytes
   author:
-    handler: src/handler.author
+    handler: src/handler.author.author
     events:
       - http:
           path: author
