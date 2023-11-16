@@ -15,8 +15,6 @@ functions:
           path: random-number
           method: get
           cors: true # Add CORS if needed
-    timeout: 60 #seconds
-    memorySize: 128 #megabytes
   home:
     handler: src/handler.home
     events:
@@ -24,8 +22,6 @@ functions:
           path: home
           method: get
           cors: true # Add CORS if needed
-    timeout: 60 #seconds
-    memorySize: 128 #megabytes
   owner:
     handler: src/handler.owner
     events:
@@ -33,6 +29,5 @@ functions:
           path: author
           method: get
           cors: true # Add CORS if needed
-    timeout: 60 #seconds
-    memorySize: 128 #megabytes
+
     
