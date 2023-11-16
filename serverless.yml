@@ -10,6 +10,11 @@ provider:
 functions:
   generateRandomNumber:
     handler: src/handler.generateRandomNumber
+    events:
+      - http:
+          path: random-number
+          method: get
+          cors: true # Add CORS if needed
     timeout: 60 #seconds
     memorySize: 128 #megabytes
     
