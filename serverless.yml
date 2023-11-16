@@ -17,4 +17,22 @@ functions:
           cors: true # Add CORS if needed
     timeout: 60 #seconds
     memorySize: 128 #megabytes
+   generateRandomNumber:
+    handler: src/handler.home
+    events:
+      - http:
+          path: home
+          method: get
+          cors: true # Add CORS if needed
+    timeout: 60 #seconds
+    memorySize: 128 #megabytes
+   generateRandomNumber:
+    handler: src/handler.author
+    events:
+      - http:
+          path: author
+          method: get
+          cors: true # Add CORS if needed
+    timeout: 60 #seconds
+    memorySize: 128 #megabytes
     
